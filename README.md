@@ -9,6 +9,10 @@
 
 A feature-rich [Factorio](https://www.factorio.com) Blueprint Editor. You can now edit your blueprints in the browser!
 
+> [!NOTE]
+> This is a fork aimed to:
+> Let the user use the space age features - using github pages
+
 ![Preview](./.github/preview.png)
 
 Sample blueprint: https://fbe.teoxoy.com/?source=https://pastebin.com/uc4n81GP
@@ -25,6 +29,7 @@ Example blueprint book: https://fbe.teoxoy.com/?source=https://pastebin.com/Xp9u
 - oil outpost generator
 - customizable keybinds
 - "creative" entities
+- Using the space age mod directly using Github pages as web host
 
 # Contributing
 
