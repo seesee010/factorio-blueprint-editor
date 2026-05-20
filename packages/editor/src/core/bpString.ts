@@ -250,7 +250,7 @@ function getBlueprintOrBookFromSource(source: string): Promise<Blueprint | Book>
             const pathParts = url.pathname.slice(1).split('/')
 
             const fetchData = (url: string): Promise<Response> =>
-                fetch(`/corsproxy?url=${encodeURIComponent(url)}`).then(response => {
+                fetch(`https://corsproxy.io/?url=${encodeURIComponent(url)}`).then(response => {
                     if (response.ok) return response
                     throw new Error('Network response was not ok.')
                 })

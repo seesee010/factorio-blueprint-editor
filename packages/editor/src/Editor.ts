@@ -34,7 +34,7 @@ export class Editor {
         const app = new Application()
 
         await Promise.all([
-            fetch('/data/data.json')
+            fetch(`${import.meta.env.BASE_URL}data/data.json`)
                 .then(res => res.text())
                 .then(modules => loadData(modules)),
             app.init({

@@ -57,7 +57,7 @@ function getBT(path: string): Promise<Texture> {
 }
 
 function getTexture(path: string, x = 0, y = 0, w = 0, h = 0): Texture {
-    const key = `/data/${path.replace('.png', '.basis')}`
+    const key = `${import.meta.env.BASE_URL}data/${path.replace('.png', '.basis')}`
     const KK = `${key}-${x}-${y}-${w}-${h}`
     let t = textureCache.get(KK)
     if (t) return t

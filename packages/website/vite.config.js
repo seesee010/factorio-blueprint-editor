@@ -32,6 +32,7 @@ export default defineConfig(async ({ command, mode }) => {
         }
     }
     return {
+        base: process.env.GITHUB_PAGES ? '/factorio-blueprint-editor/' : '/',
         build: { sourcemap: true },
         optimizeDeps: {
             include: [
